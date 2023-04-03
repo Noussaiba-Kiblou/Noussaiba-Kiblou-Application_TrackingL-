@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.GestionProduitController">
+   <children>
+      <Label layoutX="34.0" layoutY="84.0" prefHeight="25.0" prefWidth="99.0" text="Nom Produit :">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="178.0" prefHeight="17.0" prefWidth="88.0" text="Prix :">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="nom" layoutX="34.0" layoutY="123.0" prefHeight="25.0" prefWidth="161.0" />
+      <TextField fx:id="prix" layoutX="34.0" layoutY="213.0" prefHeight="25.0" prefWidth="161.0" />
+      <TableView fx:id="mytable" layoutX="238.0" layoutY="87.0" prefHeight="226.0" prefWidth="329.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="65.66665649414062" text="id" />
+          <TableColumn fx:id="col_nom" prefWidth="126.33331298828125" text="NomProduit" />
+            <TableColumn fx:id="col_prix" prefWidth="136.33331298828125" text="Prix" />
+        </columns>
+      </TableView>
+      <Label layoutX="200.0" layoutY="32.0" text="Gestion des produits" textFill="#422e94">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="pro" layoutX="34.0" layoutY="275.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="25.0" prefWidth="47.0" text="Save" textFill="#0a21a1" />
+      <Button fx:id="closee" layoutX="108.0" layoutY="275.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="47.0" text="Exit" />
+   </children>
+</AnchorPane>

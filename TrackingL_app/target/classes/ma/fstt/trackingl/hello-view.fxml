@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="458.0" prefWidth="464.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label text="Nom :">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="nom" prefHeight="25.0" prefWidth="569.0" />
+      <Label text="Telephone :">
+         <font>
+            <Font name="Britannic Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="tele" />
+      <Button fx:id="ok" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="25.0" prefWidth="52.0" text="Save" textFill="#290ca8" />
+      <TableView fx:id="mytable" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="97.99999046325684" text="id" />
+          <TableColumn fx:id="col_nom" prefWidth="173.99998474121094" text="Nom" />
+            <TableColumn fx:id="col_tele" prefWidth="153.33334350585938" text="Telephone" />
+        </columns>
+      </TableView>
+      <Button fx:id="closee" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="54.0" text="Exit" />
+   </children>
+
+ 
+</VBox>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.MenuController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="194.0" style="-fx-background-color: #8DBDFF;">
+         <children>
+            <Label prefHeight="97.0" prefWidth="194.0" text="  TrackingL" textFill="#030105">
+               <font>
+                  <Font name="Franklin Gothic Demi Cond" size="44.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <Button fx:id="pro" layoutX="278.0" layoutY="151.0" mnemonicParsing="false" onAction="#gerer_liv" prefHeight="33.0" prefWidth="159.0" style="-fx-background-color: #319eb8;" text="Gérer les produits" textFill="#fffdfde3">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font></Button>
+      <Button layoutX="278.0" layoutY="220.0" mnemonicParsing="false" onAction="#gerer_com" prefHeight="33.0" prefWidth="159.0" style="-fx-background-color: #7dc8d9;" text="Gérer les commandes" textFill="#605a5a">
+         <font>
+            <Font name="Ebrima Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="liv" layoutX="278.0" layoutY="76.0" mnemonicParsing="false" onAction="#gerer_pro" prefHeight="33.0" prefWidth="159.0" style="-fx-background-color: #38c0e0;" text="Gérer les livreurs" textFill="#2c2a57">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
